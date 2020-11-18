@@ -1,89 +1,108 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.0.2/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.0.2/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.0.2/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.0.2/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.0.2/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.0.2/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.0.2/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.0.2/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.0.2/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.0.2/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="index.css">
+        <title>HOME | Ke Wang </title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap" rel="stylesheet">
+    </head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <body class="home bg-light">
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/8.0.2/firebase-app.js"></script>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/8.0.2/firebase-analytics.js"></script>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Ke</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav navbar-right nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">WORK <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+      <div class="container">
+          <div class = "row my-5 full-height intro-header">
+              <div class="col-10" style=" top: 20vh;">
+                  <h2 style="font-size: 56px;"> Hi, I'm Ke Wang.</h2>
+                  <h2 style="font-size: 56px;">I'm a research-based and desirability-oriented innovator. I aim to translate in-depth insights into delightful and intuitive design.
+                      <br> <h3>You can find me on the <a href="https://www.linkedin.com/in/kewang0/">LinkedIn</a>, or download my resume  <a href="https://drive.google.com/file/d/10xyjmXBvdgPB1j7ueyo24PQ7ApTVjJzT/view?usp=sharing">here</a>.</h3>
+              </div>
+          </div>
+
+          <h1 class="my-3">Work</h1>
+          <div class="row my-5">
+              <div class="col">
+                  <div class="card bg-light border-0" style="width: 100%; background-color: none;">
+                      <a href="dronected.html">
+                      <img class="card-img-top" src="res/dronected.jpg" alt="Card image cap"></a>
+                      <div class="card-body">
+                          <p class="card-text">5G-connected with cloud computing for search and rescue</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card bg-light border-0" style="width: 100%; background-color: none;">
+                      <a href="theraview.html">
+                          <img class="card-img-top" src="res/theraview.png" alt="Card image cap"></a>
+                      <div class="card-body">
+                          <p class="card-text">Biofeedbakc-VR application with mobile tracking app for migraine patients</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row my-5">
+              <div class="col">
+                  <div class="card bg-light border-0" style="width: 100%; background-color: none;">
+                      <a href="https://medium.com/@ashir.wang/how-to-design-better-cooking-education-f6a81a817081">
+                          <img class="card-img-top" src="res/foodie.png" alt="Card image cap"></a>
+                      <div class="card-body">
+                          <p class="card-text">New recipe form app for cooking beginners</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card bg-light border-0" style="width: 100%; background-color: none;">
+                      <a href="https://youtu.be/lJTnV8lheFc">
+                          <img class="card-img-top" src="res/robot.png" alt="Card image cap"></a>
+                      <div class="card-body">
+                          <p class="card-text">Voice control exercise robot with facial recognition function</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+              <div style="height:20vh;"> </div>
+          </div>
+      </div>
+
+    <footer class="footer bg-light">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                © Ke Wang 2020
+            </div>
+        </div>
+    </footer>
+    </body>
+
 </html>
