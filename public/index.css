@@ -52,9 +52,14 @@ p{
     font-size: large;
 }
 
+h2{
+    font-weight: 200 !important;
+    font-size: xx-large !important;
+    color: #BEBEBE;
+}
+
 h3{
-    text-underline: yellow;
-    line-height: 1.4;
+    font-size: x-large !important;
 }
 
 .highlight{
@@ -67,7 +72,7 @@ h3{
 }
 
 b{
-    color:#D26EA9;
+    /* color:#D26EA9; */
 }
 
 .footer {
