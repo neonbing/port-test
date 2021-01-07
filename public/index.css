@@ -49,8 +49,9 @@ img{
 }
 
 p{
-    font-weight:200;
-    font-size: 20px;
+    font-weight:300;
+    font-size: 1.1rem;
+    line-height: 1.6em;
 }
 
 h2{
@@ -61,7 +62,21 @@ h2{
 }
 
 h3{
-    font-size: x-large !important;
+    font-size: 1.5rem !important;
+    font-weight:800 !important;
+}
+
+h4{
+    font-size: 2.2rem !important;
+    font-weight:400 !important;
+    color:rgb(180, 180, 180);    
+    line-height: 1.5em;
+}
+
+br{
+    display: block !important;
+    font-size: 200% !important;
+    line-height:1.5em !important;
 }
 
 .highlight{
@@ -71,11 +86,6 @@ h3{
 .strong{
     font-weight:500;
     background-color: yellow;
-}
-
-b{
-    /* color:#D26EA9; */
-
 }
 
 .footer {
@@ -109,4 +119,18 @@ b{
 
 .theraview-b{
     color:#527E5A;
+}
+
+.collapsible{
+    background-color: white;
+    border: 2px solid dimgray;
+    color:dimgray;
+    max-width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+#content{
+    display: block;
 }
