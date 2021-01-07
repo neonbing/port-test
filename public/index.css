@@ -30,7 +30,7 @@ body{
     font-weight:200;
     background-color: white;
     color:dimgray;
-    font-size:large;
+    font-size:20px;
 }
 
 
@@ -38,8 +38,9 @@ body{
     width:100vw;
 }
 
-.section{
-
+video{
+    width:100%;
+    height:auto;
 }
 
 img{
@@ -49,13 +50,14 @@ img{
 
 p{
     font-weight:200;
-    font-size: large;
+    font-size: 20px;
 }
 
 h2{
     font-weight: 200 !important;
-    font-size: xx-large !important;
-    color: #BEBEBE;
+    font-size: 50px !important;
+    /* color: #BEBEBE; */
+    font-family: 'Spectral', serif;
 }
 
 h3{
@@ -73,6 +75,7 @@ h3{
 
 b{
     /* color:#D26EA9; */
+
 }
 
 .footer {
