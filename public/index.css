@@ -43,8 +43,18 @@ body{
     line-height: 1.6;
 }
 
+.homepage{
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
 
-#banner{
+.gradient{
+    /* z-index: -1; */
+    position: absolute;
+}
+
+.banner{
     width:100vw;
 }
 
@@ -81,6 +91,20 @@ h5{
     font-size: 1.1rem;
 }
 
+a{
+    color: rgb(157, 142, 241);
+    font-family: Spectral;
+    font-size:20px;
+}
+
+.head-links{
+    color: white;
+    font-family: proxima-nova, sans-serif;
+    font-weight:400;
+    font-size:1.4rem;
+}
+
+
 br{
     display: block !important;
     font-size: 200% !important;
@@ -92,6 +116,12 @@ b{
 }
 .quote{
     font-style:italic;
+}
+
+.footer-cus{
+    height: 400px;
+    background-color: black;
+    color: white;
 }
 
 mark{
@@ -122,10 +152,15 @@ mark{
     padding-top:20vh;
 }
 
-.home{
-    background-color: #F7F7F7;
-    color:black;
+.topbar{
+    background-color: black;
+    z-index: 2;
 }
+
+.home{
+    position: fixed;
+}
+
 .full-height{
     height:70vh;
 }
