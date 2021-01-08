@@ -167,7 +167,7 @@
                 <div class="col-md-8 offset-md-2">
                 <p>We made a 3-axis matrix to prioritize all possible solutions and we picked those features that are useful for SAR, interested by T-Mobile and we're able to develop.  </p>
 
-                <h2 class="mt-5 py-4" style="font-weight: 700;">Prototype</h2>
+                <h2 class="mt-5 py-4" style="font-weight: 700;">Solution</h2>
                 We created a new remote collaboration workflow for SAR.
                 </div>
             </div>
@@ -195,14 +195,14 @@
                         <h5 class="justify-content-center d-flex">Participants</h5>
                         <!-- <p class="justify-content-center d-flex">6 non-SAR users act as remote co-pilots to work with the on-site pilots</p> -->
                     </div>
-                    <div class="col justify-content-center">
+                    <div class="col">
                         <div class="justify-content-center d-flex">
                             <img class="justify-content-center d-flex" style="width:6rem; height:6rem;"src="res/Dronected/Frame 7.png">
                         </div>
                         <h5 class="justify-content-center d-flex">Real scenario</h5>
                         <!-- <p class="justify-content-center d-flex">The test task is the co-pilot work with the pilot together to find the person hiding in the bush</p> -->
                     </div>
-                    <div class="col justify-content-center">
+                    <div class="col">
                         <div class="justify-content-center d-flex">
                             <img class="justify-content-center d-flex" style="width:6rem; height:6rem;"src="res/Dronected/Frame 9.png">
                         </div>
@@ -210,20 +210,26 @@
                         <!-- <p class="justify-content-center d-flex">The metrics of the testing is understandability, effectiveness and communication efficiency</p> -->
                     </div>
                 </div>
-                <p>6 non-SAR team users acted as remote co-pilots to work with the on-site pilots who are pilots from our group. The test task is the co-pilot work with the pilot together to find the person hiding in the bush.</p>
+                <p class="my-5">6 non-SAR team users acted as remote co-pilots to work with the on-site pilots who are pilots from our group. The test task is the co-pilot works with the pilot together to find the person hiding in the bush.</p>
                 <h5>Metrics</h5>
-                <li></li>
-                <h4>Results</h4>
-                <p><b>Pilot-Observer communication</b></p>
-                <p>Conclusion: Waypoint-only one-way communication is not enough.
-                    <br>Evidence: 3 out of 6 users spontaneously talk to pilots: e.g. “Can you fly closer to those two people?”
-                    <br>Solution: Test chatbox and audio-chat with observers and pilots to augment the current waypoint system.
-                </p>
-                <p><b>Confusion of the action and workflow</b></p>
-                <p>Conclusion: The opaque design, delayed feedback and unclear notification message lead to users’ confusion.
-                    <br>Evidence: "I think I hit the report button twice.... is the report button broken?"
-                <br>Recommendations: Immediate feedback, dedicated notification area, sound feedback, clearer notification text.
-                </p>
+                <li>Understandability. How well does users understand the system?</li>
+                <li>Effectiveness. How much help does the product help both pilots perform their tasks?</li>
+                <li>Communication efficiency. How efficient do pilots transfer information and make decisions upon it?</li>
+                <h5 class="mt-5">Prototype</h5>
+                <div class="row my-3">
+                    <div class="col">
+                        <img style="object-fit: contain;" src="res/Dronected/Frame 11.jpg">
+                    </div>
+                    <div class="col">
+                        <img style="object-fit: contain;" src="res/Dronected/Frame 10.jpg">
+                    </div>
+                </div>
+                <p> Left: Website, with video stream, map, image and GPS coordinates capture
+                <br>Right: Hardware on DJI M100, with 4G connection, 2-axis thermal and visual camera</p>
+                <h5 class="mt-5">Actionable insights</h5>
+                <li>Communication between pilot and co-pilot needs to be more intuitive as 3 out of 6 users spontaneously talk to pilots: e.g. “Can you fly closer to those two people?”. Thus,we need to embed audio chat on the top of the pin drop communication. </li>
+                <li>Make the feedback and drone work status more transparent to pilots, especially co-pilots who are not in the field. Co-pilots always raise confusions like if they lost the Internet or the gimbal is broken when they can’t adjust view by pressing keys.</li>
+                <li>Algorithms are necessary to help detect subjects in real-time video inspection as 5 out of 6 people missed catching people just because their attention happened to be focused on other areas in the image.</li>
                 </div>
             </div>
         </div>
@@ -231,12 +237,42 @@
         <div class="my-2">
             <div class="row">
                 <div class="col-md-8 offset-md-2">
-                <h2 class="mt-5 py-4" style="font-weight: 700;">Interaction 2</h2>
+                <h2 class="mt-5 py-4" style="font-weight: 700;">Interaction</h2>
                 <p>In iteration 2, we add a call function on the website, responsible web design to suit all sizes of devices and add more feedback for actions. In hardware, we upgraded both RGB and thermal camera and an adjustable gimbal. Right now, we are confident enough to let pilots other than our teammates control the drone.</p>
-                <h3><b>The next question is, does the drone system expand SAR teams’ abilities and does remote co-pilot mode reduce the cognitive load of the pilots?</b></h3>
+                <h4>The next question is, does the drone system expand SAR teams’ abilities and will SAR teams incorporate this product into their work setup?</h4>
+                <h3 class="my-4">Evaluation 2</h3>
                 <p>These questions are the key to our solution’s value proposition. To answer that, the only way is to test with SAR teams.</p>
-                <p>We recruit 8 pilots from SAR teams and work in pair(one as remote co-pilot to assist and another on-site to control the drone), finishing 5 tests in total. We did an experiment, let on-site pilot try to find the subject alone, with a co-pilot, and alone again to compare the difference with two modes.</p>
-                <h4>Results</h4>
+                <div class="row">
+                    <div class="col">
+                        <div class="justify-content-center d-flex">
+                            <img class="justify-content-center d-flex" style="width:6rem; height:6rem;"src="res/Dronected/Frame 12.png">
+                        </div>
+                        <h5 class="justify-content-center d-flex">Test sessions w/SAR</h5>
+                        <!-- <p class="justify-content-center d-flex">6 non-SAR users act as remote co-pilots to work with the on-site pilots</p> -->
+                    </div>
+                    <div class="col">
+                        <div class="justify-content-center d-flex">
+                            <img class="justify-content-center d-flex" style="width:6rem; height:6rem;"src="res/Dronected/Frame 7.png">
+                        </div>
+                        <h5 class="justify-content-center d-flex">Real scenario</h5>
+                        <!-- <p class="justify-content-center d-flex">The test task is the co-pilot work with the pilot together to find the person hiding in the bush</p> -->
+                    </div>
+                    <div class="col">
+                        <div class="justify-content-center d-flex">
+                            <img class="justify-content-center d-flex" style="width:6rem; height:6rem;"src="res/Dronected/Frame 12.png">
+                        </div>
+                        <h5 class="justify-content-center d-flex">Metrics measured</h5>
+                        <!-- <p class="justify-content-center d-flex">The metrics of the testing is understandability, effectiveness and communication efficiency</p> -->
+                    </div>
+                </div>
+                <h5 class="my-5">Metrics</h5>
+                <li>Learnability. How well and fast do participants learn to use this system? </li>
+                <li>Effectiveness. Do co-pilots make a difference in spotting a person and how well do the workmates search the person?                </li>
+                <li>Efficiency. Does the introduction of co-pilot speed up the search process?                </li>
+                <li>Workload. How much workload do pilots and co-pilots receive when performing this task? Measured by NASA-Task Load Index                </li>
+                <li>Adoption. How willing are SAR pilots to use the product in their missions?                </li>
+
+                <h5 class="my-5">Results</h5>
                 <p><li><p>Our prototype is able to prove the concept in the test level, but needs to improve the functionality to reach the work level.</li>
                     Evidence: One SAR team member: “I’d give your product A+ rate”; On-site pilots think our project is a neat idea and they can foresee the use case in SAR team, but there still some bugs to fix.<br></p>
                 <li><p>It’s necessary to split control and monitor tasks for two different people, which validates our idea. Frustration of poor communication between the work mate is the main task load of pilot+observer mode, which means we need to improve on the usability.</li>
@@ -268,8 +304,14 @@
         <div class="my-2">
                 <div class="row">
                     <div class="col-md-8 offset-md-2">
-                <h2 class="mt-5 py-4" style="font-weight: 700;">Conclusion</h2>
-                <p>Our final product will be presented at T-Mobile Tech Experience Center as a part of 5G technology demo.</p>
+                        <h2 class="mt-5 py-4" style="font-weight: 700;">Conclusion</h2>
+                        <p> We received positive feedback from SAR pilots who attended our testing.</p>
+                        <p class="quote">"If they(co-pilots) can control, zoom, or if they can take a photo, it is fantastic because that offloads too much workload on me."</p>
+                        <p class="d-flex justify-content-end"> --Pilot, Seattle Mountain Rescue</p>
+                        <p class="quote">"I know that it worked out really well. I think the coordination between a pilot that I have never met was easy to use. I would give this prototype A+ rate."</p>
+                        <p class="d-flex justify-content-end"> --Pilot, County Search and Rescue</p>
+                
+                        <p>Our final product will be presented at T-Mobile Tech Experience Center as a part of 5G technology demo.
                     </div>
                 </div>
         </div>
@@ -278,7 +320,7 @@
             <div class="row">
                 <div class="col-md-8 offset-md-2">
                 <h2 class="mt-5 py-4" style="font-weight: 700;">Reflection</h2>
-                <p>1. Always over prepare for the field testing, including battery, backup hardware and cellular data. A scheduled user testing session costs a lot of time and budget.​
+                <p>1. Focus on the minimum viable product. It's vital to get the first workable version to test with users so that I will have a clearer image of how users use the product.​
                 ​
                 <br>2. Involving engineers in the design process will help the team be on the same page and bring their perspectives. I invited engineers to participate in interviews, discuss evaluation plans, observe evaluations and analyze research results. They can get the striking and fresh information directly from users and feel the ownership of the research results. I don’t need to spend more effort in convincing them to adopt my ideas.
                 ​

@@ -75,10 +75,19 @@ h4{
     line-height: 1.5em;
 }
 
+h5{
+    font-weight:600;
+    font-size: 1.1rem;
+}
+
 br{
     display: block !important;
     font-size: 200% !important;
     line-height:1.5em !important;
+}
+
+.quote{
+    font-style:italic;
 }
 
 .highlight{
