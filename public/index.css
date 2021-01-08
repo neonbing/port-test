@@ -20,19 +20,27 @@
     /*font-style: ;*/
 }
 
+@font-face {
+    font-family: 'Spectral';
+    src: url('res/font/Spectral-Bold.ttf') format('truetype');
+    font-weight: 700;
+    /*font-style: ;*/
+}
+
 @font-face{
     font-family: "Mulish";
     src: url('res/font/Mulish-VariableFont_wght.ttf');
 }
 
 body{
-    font-family: 'Mulish';
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     background-color: white;
     color:dimgray;
     font-size:20px;
-    font-weight:300;
     font-size: 1.1rem;
-    line-height: 1.6em;
+    line-height: 1.6;
 }
 
 
@@ -50,17 +58,10 @@ img{
     overflow:hidden;
 }
 
-p{
-    font-weight:300;
-    font-size: 1.1rem;
-    line-height: 1.6em;
-}
-
 h2{
-    font-weight: 200 !important;
     font-size: 50px !important;
     /* color: #BEBEBE; */
-    font-family: 'Spectral', serif;
+    font-family: Spectral !important;
 }
 
 h3{
@@ -71,8 +72,8 @@ h3{
 h4{
     font-size: 2.2rem !important;
     font-weight:400 !important;
-    color:rgb(180, 180, 180);    
-    line-height: 1.5em;
+    color:rgb(180, 180, 180);       
+    line-height: 1.3em;
 }
 
 h5{
@@ -86,8 +87,17 @@ br{
     line-height:1.5em !important;
 }
 
+b{
+    font-weight: 600;
+}
 .quote{
     font-style:italic;
+}
+
+mark{
+    color: #ea0a8e;
+    background-color: white;
+    padding:0;
 }
 
 .highlight{
