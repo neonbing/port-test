@@ -92,9 +92,14 @@ h5{
 }
 
 a{
-    color: rgb(157, 142, 241);
+    color: rgb(108, 105, 252);
     font-family: Spectral;
     font-size:20px;
+}
+
+a:hover{
+    color:rgb(159, 158, 253);
+    text-decoration: none;  
 }
 
 .head-links{
@@ -102,6 +107,12 @@ a{
     font-family: proxima-nova, sans-serif;
     font-weight:400;
     font-size:1.4rem;
+}
+
+.head-links:hover {
+    color:white;
+    /* background-color: yellow; */
+    text-decoration: line-through;
 }
 
 
