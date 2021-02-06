@@ -16,7 +16,7 @@ body{
     font-style: normal;
     background-color: white;
     /* color:dimgray; */
-    color:#202020
+    color:#202020;
     font-size: 1.3rem;
     line-height: 1.6;
 }
@@ -58,6 +58,8 @@ h3{
     font-size: 1.5rem !important;
     /* color:chartreuse; */
     font-weight:600 !important;
+    text-transform: uppercase;
+    margin-top: 150px !important; 
 }
 
 h4{
@@ -65,13 +67,19 @@ h4{
     font-weight:800 !important;
     /* color: greenyellow;        */
     line-height: 1.3em;
+    margin-bottom: 20px !important;
 }
 
 h5{
     font-weight:600;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 
+.title{
+    font-size: 40px !important;
+    font-weight:600 !important;
+    text-transform: uppercase;
+}
 
 a{
     color: rgb(108, 105, 252);
@@ -117,6 +125,7 @@ b{
     color: white;
     overflow: hidden;
     width: 100vw;
+    margin-top: 150px;
 }
 
 mark{
@@ -184,4 +193,9 @@ mark{
 
 #content{
     display: block;
+}
+
+.full-size{
+    margin-top: 50px;
+    margin-bottom: 150px;
 }
