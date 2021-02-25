@@ -12,8 +12,8 @@
 
 body{
     font-family: proxima-nova, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 300 !important;
+    font-style: normal !important;
     background-color: white;
     /* color:dimgray; */
     color:#202020;
@@ -92,6 +92,19 @@ a:hover{
     text-decoration: none;  
 }
 
+.theraview-link{
+    font-family: proxima-nova, sans-serif;
+    font-weight:600 !important;
+    font-size:1.3rem;
+    color:#527E5A;
+}
+
+.theraview-link:hover{
+    text-decoration: underline;
+    color:#527E5A;
+}
+
+
 .head-links{
     color: white;
     font-family: proxima-nova, sans-serif;
@@ -129,9 +142,10 @@ b{
 }
 
 mark{
-    color: #ea0a8e;
+    /* color: #ea0a8e; */
     background-color: white;
     padding:0;
+    font-weight:600 !important;
 }
 
 .highlight{
