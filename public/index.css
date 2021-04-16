@@ -133,6 +133,15 @@ br{
 b{
     font-weight: 600;
 }
+
+.dark{
+    color:white;
+}
+
+.mobilevideo{
+    width: 80% !important;
+}
+
 .quote{
     font-style:italic;
 }
