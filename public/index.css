@@ -42,16 +42,27 @@ img{
     margin-bottom: 0.6em;
 }
 
+.inline{
+    display: inline;
+    width:1.5rem;
+}
+
+h1{
+    font-family: 'Spectral', serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
 h2{
     font-family: 'Spectral', serif;
     font-weight: 700;
     font-size: 56px;
 }
 
-.intro-header{
+.homeheader{
     font-family: 'Spectral', serif;
-    font-weight: 700;
-    font-size: 56px;
+    font-weight: 600;
+    font-size: 2.4rem;
 
 }
 
@@ -71,6 +82,19 @@ h4{
     margin-bottom: 20px !important;
 }
 
+h6{
+    font-family: proxima-nova, sans-serif;
+    font-weight: 300 !important;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #cac7c5;
+    /* color: #8e8885; */
+}
+
+h7{
+    font-size: 1.5rem;
+}
+
 p{
     line-height: 1.5em;
     margin-bottom: 0.3em;
@@ -87,7 +111,7 @@ h5{
 }
 
 .title{
-    font-size: 40px !important;
+    font-size: 2rem !important;
     font-weight:600 !important;
     text-transform: uppercase;
     color: white;
@@ -95,13 +119,13 @@ h5{
 }
 
 a{
-    color: rgb(108, 105, 252);
-    font-family: Spectral;
-    font-size: 32px;
+    color: #f25410;
+    font-weight:500;
+    font-family: proxima-nova, sans-serif;
 }
 
 a:hover{
-    color:rgb(159, 158, 253);
+    color:#f25410;
     text-decoration: none;  
 }
 
@@ -127,7 +151,7 @@ a:hover{
 
 .head-links:hover {
     color:black;
-    background-color: rgb(108, 105, 252);
+    background-color: #f25410;
     /* text-decoration: line-through; */
 }
 
@@ -155,7 +179,7 @@ b{
 }
 
 .footer-cus{
-    height: 500px;
+    height: 400px;
     background-color: black;
     color: white;
     overflow: hidden;
